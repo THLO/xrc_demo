@@ -1,0 +1,3 @@
+service : {
+  get_rate: (text) -> (float64);
+}
