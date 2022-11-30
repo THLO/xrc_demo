@@ -11,7 +11,7 @@ Note that [dfx](https://github.com/dfinity/sdk) and [npm](https://docs.npmjs.com
 Clone the repository, get the node dependencies, and build the canisters.
 
 ```bash
-it clone git@github.com:THLO/xrc_demo.git
+git clone git@github.com:THLO/xrc_demo.git
 cd xrc_demo/
 npm install
 dfx build
