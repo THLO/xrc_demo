@@ -5,10 +5,7 @@
   "xrc": {
     "local": "rrkah-fqaaa-aaaaa-aaaaq-cai"
   },
-  "xrc_demo_backend": {
+  "xrc_demo": {
     "local": "ryjl3-tyaaa-aaaaa-aaaba-cai"
-  },
-  "xrc_demo_frontend": {
-    "local": "r7inp-6aaaa-aaaaa-aaabq-cai"
   }
 }
