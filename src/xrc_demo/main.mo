@@ -19,12 +19,12 @@ actor {
     let time = Nat64.fromIntWrap(time_sec - 60000);
     let request : XRC.GetExchangeRateRequest = {
       base_asset = {
-      symbol = symbol;
-      class_ = #Cryptocurrency;
+        symbol = symbol;
+        class_ = #Cryptocurrency;
       };
       quote_asset = {
-      symbol = "USDT";
-      class_ = #Cryptocurrency;
+        symbol = "USDT";
+        class_ = #Cryptocurrency;
       };
       timestamp = ?time;
     };
