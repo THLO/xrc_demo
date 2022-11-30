@@ -29,7 +29,7 @@ dfx start --background
 dfx deploy --with-cycles 10000000000000
 ```
 
-Note that the `--with-cycles` parameter is required because must be sent with
-every message to the exchange rate canister.
+Note that the `--with-cycles` parameter is required because cycles must be sent
+with every request to the exchange rate canister.
 
-Open the link for the `xrc_demo_backend` to get to the Candid interface.
+Open the link for the `xrc_demo` to get to the Candid interface.
