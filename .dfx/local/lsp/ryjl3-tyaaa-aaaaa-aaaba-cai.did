@@ -1,3 +1,0 @@
-service : {
-  get_exchange_rate: (text) -> (float64);
-}
