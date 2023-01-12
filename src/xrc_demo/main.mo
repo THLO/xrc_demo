@@ -16,7 +16,7 @@ actor {
     let time_sec = Time.now() / 1_000_000_000;
     // Use the previous minute to increase the chance of getting a rate because
     // not every exchange has data available for the current minute.
-    let time = Nat64.fromIntWrap(time_sec - 60000);
+    let time = Nat64.fromIntWrap(time_sec - 60);
     let request : XRC.GetExchangeRateRequest = {
       base_asset = {
         symbol = symbol;
@@ -29,8 +29,8 @@ actor {
       timestamp = ?time;
     };
 
-    // Every XRC call needs 5B cycles.
-    Cycles.add(5_000_000_000);
+    // Every XRC call needs 10B cycles.
+    Cycles.add(10_000_000_000);
     let response = await XRC.get_exchange_rate(request);
     // Print out the response to get a detailed view.
     Dbg.print(debug_show(response));
