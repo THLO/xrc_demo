@@ -13,10 +13,7 @@ actor {
 
   /// Extract the current exchange rate for the given symbol.
   public func get_exchange_rate(symbol : Text) : async Float {
-    let time_sec = Time.now() / 1_000_000_000;
-    // Use the previous minute to increase the chance of getting a rate because
-    // not every exchange has data available for the current minute.
-    let time = Nat64.fromIntWrap(time_sec - 60);
+
     let request : XRC.GetExchangeRateRequest = {
       base_asset = {
         symbol = symbol;
@@ -26,7 +23,8 @@ actor {
         symbol = "USDT";
         class_ = #Cryptocurrency;
       };
-      timestamp = ?time;
+      // Get the current rate.
+      timestamp = null;
     };
 
     // Every XRC call needs 10B cycles.
