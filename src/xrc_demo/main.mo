@@ -27,8 +27,8 @@ actor {
       timestamp = null;
     };
 
-    // Every XRC call needs 10B cycles.
-    Cycles.add(10_000_000_000);
+    // Every XRC call needs 1B cycles.
+    Cycles.add(1_000_000_000);
     let response = await XRC.get_exchange_rate(request);
     // Print out the response to get a detailed view.
     Dbg.print(debug_show(response));
