@@ -14,7 +14,7 @@ Clone the repository, get the node dependencies, and build the canisters.
 git clone git@github.com:THLO/xrc_demo.git
 cd xrc_demo/
 npm install
-dfx build
+dfx build --network ic
 ```
 
 ## Deployment
