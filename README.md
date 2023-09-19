@@ -26,10 +26,9 @@ If you want to test the demo locally, you can use the following commands:
 dfx start --background
 
 # Deploys the canisters to the replica and generates the candid interface.
-dfx deploy --with-cycles 10000000000000
+dfx deploy
 ```
 
-Note that the `--with-cycles` parameter is required because cycles must be sent
-with every request to the exchange rate canister.
+Note that the replica is defined as running as part of a system subnet in `dfx.json`, which is required because the exchange rate canister itself must run on a system subnet as it does not attach cycles to HTTPS outcalls.
 
 Open the link for the `xrc_demo` to get to the Candid interface.
