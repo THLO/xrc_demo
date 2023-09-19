@@ -18,14 +18,14 @@
     }
   },
   "networks": {
-	"local": {
-		"bind": "127.0.0.1:4812"
-	}
+    "local": {
+      "bind": "127.0.0.1:4812"
+    }
   },
   "defaults": {
-	  "replica": {
-		  "subnet_type": "system"
-	  }
+    "replica": {
+      "subnet_type": "system"
+    }
   },
   "version": 1
 }
