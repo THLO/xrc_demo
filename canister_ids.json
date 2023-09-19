@@ -1,13 +1,8 @@
 {
-  "__Candid_UI": {
-    "local": "rkp4c-7iaaa-aaaaa-aaaca-cai"
-  },
   "xrc": {
-    "local": "rrkah-fqaaa-aaaaa-aaaaq-cai",
     "ic": "uf6dk-hyaaa-aaaaq-qaaaq-cai"
   },
   "xrc_demo": {
-    "local": "uvf7r-liaaa-aaaah-qabnq-cai",
     "ic": "uvf7r-liaaa-aaaah-qabnq-cai"
   }
 }
