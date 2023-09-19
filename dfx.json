@@ -17,11 +17,15 @@
       }
     }
   },
+  "networks": {
+	"local": {
+		"bind": "127.0.0.1:4812"
+	}
+  },
   "defaults": {
-    "build": {
-      "args": "",
-      "packtool": ""
-    }
+	  "replica": {
+		  "subnet_type": "system"
+	  }
   },
   "version": 1
 }
